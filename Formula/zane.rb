@@ -5,21 +5,21 @@
 class Zane < Formula
   desc "Conversational Kubernetes co-pilot in your terminal"
   homepage "https://github.com/zarakM/zane"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/zarakM/zane/releases/download/v0.1.3/zane_0.1.3_Darwin_x86_64.tar.gz"
-      sha256 "d4879fb2eef9fc1bd8918c8c1aad028ff3423b5bbf3e47775f989305492e0265"
+      url "https://github.com/zarakM/zane/releases/download/v0.1.4/zane_0.1.4_Darwin_x86_64.tar.gz"
+      sha256 "918e1459cd327bc01168add289251ae7080a1f91020a9144e9d8a69eb2ae94bc"
 
       define_method(:install) do
         bin.install "zane"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/zarakM/zane/releases/download/v0.1.3/zane_0.1.3_Darwin_arm64.tar.gz"
-      sha256 "683314b33a1ed2a899b964b7756730d81f9fce824ec0b7cbacd3cb8dc657383d"
+      url "https://github.com/zarakM/zane/releases/download/v0.1.4/zane_0.1.4_Darwin_arm64.tar.gz"
+      sha256 "3cd3242e8febb284707bc7d709ff6a76d1fae3123d07ec2e4d6354e3f5c2fe93"
 
       define_method(:install) do
         bin.install "zane"
@@ -29,15 +29,15 @@ class Zane < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zarakM/zane/releases/download/v0.1.3/zane_0.1.3_Linux_x86_64.tar.gz"
-      sha256 "e3a9951107a643798022bbff3d0064154b17b66c78d4321c892340b9a7fd1aeb"
+      url "https://github.com/zarakM/zane/releases/download/v0.1.4/zane_0.1.4_Linux_x86_64.tar.gz"
+      sha256 "85cb0f8bedbc22c5b722a734c2c60f8b595db69a9213527b25affd29ad9eb2aa"
       define_method(:install) do
         bin.install "zane"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zarakM/zane/releases/download/v0.1.3/zane_0.1.3_Linux_arm64.tar.gz"
-      sha256 "a70f20240728d7f05407a4de13d321e9d0c7d38474c23fc62218aff341dc981b"
+      url "https://github.com/zarakM/zane/releases/download/v0.1.4/zane_0.1.4_Linux_arm64.tar.gz"
+      sha256 "80037de5fa1a2fd11ed813e32e4f0a5ef1cb39eead657ad9386599a431186242"
       define_method(:install) do
         bin.install "zane"
       end
